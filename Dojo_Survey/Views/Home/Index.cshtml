@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center text-primary">Dojo Survey</h1>
+    <div class="border border-dark rounded container-sm col-6 bg-secondary text-light overflow-auto">
+        <form action="/newStudent" method="post" class="mt-3" >
+            <div class="mb-3">
+                <label>Your Name:</label>
+                <input type="text" name="Name">
+            </div>
+            <div class="mb-3">
+                <label>Dojo Location:</label>
+                <select name="Location" id="Location">
+                    <option value="Online">Online</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Houston">Houston</option>
+                    <option value="San Jose">San Jose</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>Favorite Language:</label>
+                <select name="Language" id="Language">
+                    <option value="Python">Python</option>
+                    <option value="MERN">MERN</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="Web Fundamentals">Web Fundamentals</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>Comment (optional):</label>
+                <br>
+                <textarea name="Comment" id="Comment" cols="60" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary float-end mb-2">Submit</button>
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
